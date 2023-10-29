@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad618d076d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <i class="fa-brands fa-spotify">Ranufy</i>
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </nav>
+            <img src="music.jpeg" alt="" class="songimg">
+            <h1>Ashique Mai Teri</h1>
+            <p>Ft. Ranu Mondal</p>
+
+
+            <audio  id="song">
+                <source src="ranu0.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+
+
+            <div class="control">
+                <div><i class="fa-solid fa-backward" id="prev"></i></div>
+                <div onclick="playpause()"> <i class="fa-solid fa-play" id="pauseicon"></i></div>
+                <div><i class="fa-solid fa-forward" id="forw"></i></div>    
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
